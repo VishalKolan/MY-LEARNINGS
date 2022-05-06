@@ -1,0 +1,22 @@
+https://dockerlabs.collabnix.com/docker/cheatsheet/
+
+docker version
+docker ps <running container> --all
+docker container ls
+dokcer container
+    docker run = docker create + docker start
+                docker create <image name>---- > docker containerid
+                docker start -a (any output) <containerid> ----> running container
+    docker run -d (detach) -p (publish) <image name> <command!>
+    docker pull <image name> (pull image but will not start container)
+    docker container prune 
+    docker stop <conatinerid> (sigterm-gracefully shutdowm)
+    docker kill <conatinerid> (sigkill-shutdown rightnow)
+docker exec (run command inside the container) -it (input to container) <containerid> <command>
+    -it <-i(STDIN) -t(Text formating )>
+docker exec -it <containerid> sh
+    sh (command processor --bash,powershell,zsh,sh)
+docker images
+docker images --all
+docker system prune
+docker logs <containerid>

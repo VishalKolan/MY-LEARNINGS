@@ -1,0 +1,11 @@
+https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#create
+
+minikube start
+kubectl apply -f <file name>
+kubectl get all
+kubectl get <specific node>
+kubectl get service <service name>
+kubectl get node name -o wide ----- for ip address and all the details
+kubectl describe pod <name of the pod> fpr all the detailes 
+kubectl logs service/pod/... <name of the service>
+minikube stop 

@@ -20,3 +20,8 @@ docker images
 docker images --all
 docker system prune
 docker logs <containerid>
+docker build  <dockerid>/<repo/prpjectname> : <version> latest
+docker commit -c "CMD 'redis-server'" <CONTAINERID>
+docker-compose up (docker-compose.yml file) -d
+docker-compose up --build (to build images again)
+docker-compose down

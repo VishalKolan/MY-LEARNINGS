@@ -1,0 +1,11 @@
+npx create-react-app frontend
+
+DEPENDENCY NEED NODE.JS
+
+
+npm run test
+
+npm run build  
+
+npm run start
+

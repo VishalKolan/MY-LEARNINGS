@@ -8,6 +8,14 @@ dokcer container
                 docker create <image name>---- > docker containerid
                 docker start -a (any output) <containerid> ----> running container
     docker run -d (detach) -p (publish) <image name> <command!>
+    docker run -p <port outside the container>: <port inside the  container> <imageid>
+docker volume -- to copy src to the root module
+
+    docker run -p <port outside the container>: <port inside the  container> -v/app/node_module -v$(pwd);/app <imageid>
+
+
+
+
     docker pull <image name> (pull image but will not start container)
     docker container prune 
     docker stop <conatinerid> (sigterm-gracefully shutdowm)
@@ -22,6 +30,13 @@ docker system prune
 docker logs <containerid>
 docker build  <dockerid>/<repo/prpjectname> : <version> latest
 docker commit -c "CMD 'redis-server'" <CONTAINERID>
-docker-compose up (docker-compose.yml file) -d
-docker-compose up --build (to build images again)
-docker-compose down
+docker compose.yaml
+    docker-compose up (docker-compose.yml file) -d
+    docker-compose up --build (to build images again)
+    docker-compose down
+    dokcer-compose ps
+
+docker build -f <dockerfile name> . (present directory)
+
+
+ 

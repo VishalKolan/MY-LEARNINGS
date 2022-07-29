@@ -10,5 +10,6 @@ kubectl get node name -o wide ----- for ip address and all the details
 kubectl describe pod <name of the pod> fpr all the detailes 
 kubectl logs service/pod/... <name of the service>
 kubectl exec -it <smae of the pod> -- bin/bash
-kubectl delete deployment <name of the service>
+kubectl delete deployment <name of the deployment>
+kubectl describe service <name of the servicer>
 minikube stop 
